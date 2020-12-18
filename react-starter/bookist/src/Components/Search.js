@@ -27,7 +27,7 @@ class Search extends Component {
             <section id="search">
                 <input value={this.state.searchInput} onChange={this.handleChange} />
                 <button onClick={this.handleSearch} >SEARCH</button>
-                {this.state.searchInput &&
+                {this.props.bookArr.length < this.props.data.length &&
                     <button onClick={this.handleClear} >Clear</button>
                 }
 

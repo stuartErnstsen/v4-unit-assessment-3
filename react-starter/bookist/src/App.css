@@ -42,6 +42,10 @@
   margin: 0;
 }
 
+body {
+  min-height: 100vh;
+}
+
 header {
   position: relative;
   height: 75px;
@@ -69,14 +73,15 @@ header {
 
 main {
   display: flex;
+  min-height: 86vh;
 }
 
 #bookSection {
   width: 70%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding: 10px;
+  justify-content: center;
 }
 
 .book {

@@ -41,7 +41,7 @@ class App extends Component {
     return (
       <div className="App" >
         <Header />
-        <Search searchClear={this.searchClear} filterBooks={this.filterBooks} />
+        <Search searchClear={this.searchClear} filterBooks={this.filterBooks} bookArr={this.state.bookArr} data={data} />
         <main>
           <BookList bookArr={this.state.bookArr} addToShelf={this.addToShelf} />
           <Shelf shelfArr={this.state.shelfArr} clearShelf={this.clearShelf} removeFromShelf={this.removeFromShelf} />
